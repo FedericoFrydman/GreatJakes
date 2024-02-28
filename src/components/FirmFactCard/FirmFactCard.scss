@@ -1,0 +1,63 @@
+@use '../../styles/colors' as color;
+
+.firm-fact-card {
+  transition: background-color 300ms, outline-width 300ms, outline-offset 300ms;
+  min-height: 322px;
+  max-width: 364px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color.$white;
+  padding: 15px;
+
+  &:hover {
+    background-color: color.$green;
+
+    .button {
+      background-color: transparent;
+      border: 1px solid color.$white;
+
+      &:disabled {
+        pointer-events: none;
+        cursor: none;
+        background-color: color.$grey;
+        border: 1px solid color.$grey;
+      }
+    }
+  }
+
+  &:first-child {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  &-border {
+    align-items: flex-start;
+    outline-width: 0;
+    outline-offset: 0;
+    outline-style: solid;
+    outline-color: color.$green;
+
+    .button {
+      margin-top: 50px;
+    }
+
+    &:hover {
+      outline-width: 10px;
+      outline-offset: -10px;
+      background-color: color.$white;
+
+      .button {
+        background-color: color.$green;
+        border: 1px solid color.$green;
+
+        &:disabled {
+          pointer-events: none;
+          cursor: none;
+          background-color: color.$grey;
+          border: 1px solid color.$grey;
+        }
+      }
+    }
+  }
+}

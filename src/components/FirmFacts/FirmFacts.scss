@@ -1,0 +1,9 @@
+@use '../../styles/colors' as color;
+
+.firm-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(322px, 1fr));
+  grid-gap: 10px;
+  margin: 45px 0;
+}

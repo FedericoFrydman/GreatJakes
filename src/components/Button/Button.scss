@@ -7,7 +7,7 @@ $lines: 2;
 .button {
   display: inline-block;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 30px;
   transition: color 0.3s;
   background-color: color.$blue;
   color: color.$white;
@@ -34,7 +34,7 @@ $lines: 2;
     text-align: left;
 
     svg {
-      margin-right: 8px;
+      margin-right: 18px;
     }
     .text {
       white-space: unset;

@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { FirmFacts } from './components/FirmFacts';
+import { FirmFactCard } from './components/FirmFactCard';
+import { Button } from './components/Button';
+import './styles/App.scss';
+import CloseImg from './assets/close_icon.svg';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="app">
+      <img src={CloseImg} alt="Close Icon" className="close-button" />
+      <h2 className="title">Firm Facts</h2>
+      <FirmFacts>
+        <FirmFactCard>
+          <Button iconName={faSearch} variant="icon">
+            This is a two line button that terminates with making this text
+            larger to test elipsis
+          </Button>
+        </FirmFactCard>
+        <FirmFactCard>
+          <Button iconName={faSearch} variant="icon">
+            This is a two line button that terminates with making this text
+            larger to test elipsis
+          </Button>
+        </FirmFactCard>
+        <FirmFactCard>
+          <Button>This is a one line button</Button>
+        </FirmFactCard>
+        <FirmFactCard>
+          <Button iconName={faSearch} variant="icon">
+            This is a two line button that terminates with making this text
+            larger to test elipsis
+          </Button>
+        </FirmFactCard>
+        <FirmFactCard variant="border">
+          <Button iconName={faSearch} variant="icon">
+            This is a two line button that terminates with making this text
+            larger to test elipsis
+          </Button>
+        </FirmFactCard>
+        <FirmFactCard variant="border">
+          <Button iconName={faSearch} variant="icon" disabled>
+            This is a two line button that terminates with making this text
+            larger to test elipsis
+          </Button>
+        </FirmFactCard>
+        <FirmFactCard variant="border">
+          <Button iconName={faSearch} variant="icon">
+            This is a two line button that terminates with making this text
+            larger to test elipsis
+          </Button>
+        </FirmFactCard>
+      </FirmFacts>
+    </div>
+  );
+};
 
-export default App
+export default App;

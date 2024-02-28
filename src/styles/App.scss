@@ -1,0 +1,38 @@
+@use './colors' as color;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: color.$bg-color;
+}
+
+.app {
+  margin: 0px 80px;
+
+  h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 66px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: color.$white;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff20;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close-button:hover {
+  transform: rotate(720deg);
+}

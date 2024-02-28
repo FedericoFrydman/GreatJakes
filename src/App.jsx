@@ -2,6 +2,7 @@ import { FirmFacts } from './components/FirmFacts';
 import { FirmFactCard } from './components/FirmFactCard';
 import { Button } from './components/Button';
 import './styles/App.scss';
+import './styles/media-queries.scss';
 import CloseImg from './assets/close_icon.svg';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 

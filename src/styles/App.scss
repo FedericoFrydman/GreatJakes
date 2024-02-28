@@ -1,4 +1,5 @@
 @use './colors' as color;
+@import './media-queries.scss';
 
 body {
   margin: 0;
@@ -21,6 +22,19 @@ body {
     padding-top: 100px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ffffff20;
+
+    @include large {
+      font-size: 50px;
+    }
+    @include medium {
+      font-size: 45px;
+    }
+    @include small {
+      font-size: 40px;
+    }
+    @include xsmall {
+      font-size: 35px;
+    }
   }
 }
 

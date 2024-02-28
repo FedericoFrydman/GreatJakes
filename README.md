@@ -22,13 +22,13 @@ To get started with FirmFacts, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/firmfacts.git
+   git clone https://github.com/FedericoFrydman/GreatJakes.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd firmfacts
+   cd GreatJakes
    npm install
    ```
 

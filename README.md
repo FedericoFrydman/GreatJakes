@@ -1,3 +1,3 @@
 # GreatJakes Styling Challenge
 
-Run -> npm run dev
+Run -> npm start
